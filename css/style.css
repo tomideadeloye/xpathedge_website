@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.fira {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+/*Xpathedge Website*/
+.banner {
+    height: 100vh;
+}
+
+.active_nav .nav-link {
+    color: #fff;   
+}
+
+.font-100-responsive {
+    font-size: 100px;
+}
+
+
+/*Footer*/
+.about-widget .email {
+    font-size: 18px;
+    color: #333333;
+    margin: 15px 0 15px;
+    display: block;
+    font-family: "Calibre Regular", Arial, sans-serif !important;
+}
+
+.phone {
+    font-size: 22px;
+    color: #333333;
+    font-family: "Calibre Regular", Arial, sans-serif !important;
+}
+
+.footer-1 {
+    background-color: #292929;
+}
+/*
+
+.footer-bg {
+background-color: #f3f3f3;
+background-image: url(../img/5d816b07d26938434adbcc98_image-footer-circle.svg);
+}
+*/
+
+input.footer-form {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    border-radius: 0px;
+}
+
+.footer-form::placeholder {
+    font-size: 12px !important;
+}
+
+.footer-bg .title {
+    font-size: 15px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.footer-list ul li a {
+    display: block;
+    line-height: 38px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-list ul li a:hover {
+    color: #76797e;
+    text-decoration: none;
+}
+
+.footer-information p {
+    padding: 0 0 30px;
+    color: #333333;
+}
+
+.footer-information ul li {
+    display: inline-block;
+}
+
+
+.footer-information ul li a {
+    border-radius: 50% !important;
+    text-align: center !important;
+    line-height: 35px !important;
+    color: #dbdbdb !important;
+    margin-right: 10px !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.footer-2 {
+    background-color: #000;
+}
+
+.bottom-footer {
+    padding: 15px 0;
+}
+
+.bottom-footer p {
+    /*	float: left;*/
+    color: #8D8D8D;
+    font-size: 11px;
+}
+
+.bottom-footer ul {
+    /*	float: right;*/
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.bottom-footer ul li {
+    display: inline-block;
+}
+
+.bottom-footer ul li a {
+    line-height: 28px;
+    color: #8D8D8D;
+    font-size: 11px;
+    margin: auto 15px;
+}
+
+.bottom-footer ul li a:hover {
+    color: #3152dc;
+    text-decoration: none;
+}
+
+.btn-trans {
+    color: #1C1C1C;
+    background-color: #0000;
+    border-color: #1C1C1C !important;
+}
+
+.btn-trans:hover {
+    color: #1C1C1C;
+    background-color: #0000;
+    border-color: #1C1C1C !important;
+}
+
+.font-13 {
+    font-size: 13px !important;
+}
+
+.text-wine {
+    color: #FE2633;
+}
