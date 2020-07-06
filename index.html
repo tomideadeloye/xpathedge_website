@@ -171,7 +171,7 @@
 
 
                 <div class="swiper-container">
-                    <div class="swiper-wrapper my-4">
+                    <div class="my-4 swiper-wrapper">
                         <div class="col-lg-3 swiper-slide">
                             <h2 class="font-weight-bold">Google</h2>
                             <div class="divider mb-5" style="width: 10%; border-top: 3px solid #707070;"></div>
@@ -298,7 +298,9 @@
                         </div>
                     </div>
 
+
                     <div class="swiper-pagination"></div>
+
                 </div>
 
 
@@ -496,6 +498,23 @@
                 el: '.swiper-pagination',
                 type: 'progressbar',
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            }
         });
 
 

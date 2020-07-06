@@ -236,6 +236,10 @@ li.active_dark {
     height: 100%;
 }
 
+.swiper-slide {
+    word-wrap: break-word;
+}
+
 .swiper-container-horizontal > .swiper-pagination-progressbar {
     bottom: 0 !important;
     top: inherit !important;
