@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/media-query.css" />
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!--        font-->
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -59,12 +61,12 @@
                             </li>
                         </ul>
 
-<!--
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item mx-md-4 my-md-0 postion-relative">
-                                <a class="nav-link px-0 text-uppercase text-white" href="#"><i class="fa fa-ellipsis-h text-white fa-2x"></i></a>
-                            </li>
-                        </ul>
+                        <!--
+<ul class="navbar-nav ml-auto">
+<li class="nav-item mx-md-4 my-md-0 postion-relative">
+<a class="nav-link px-0 text-uppercase text-white" href="#"><i class="fa fa-ellipsis-h text-white fa-2x"></i></a>
+</li>
+</ul>
 -->
                     </div>
                 </nav>
@@ -76,7 +78,7 @@
         <div class="container mt-5">
             <div class="row align-cener pb-5 mb-5">
                 <div class="col-lg-5">
-                    <h1 class="text-uppercase ultrabold font-80" style="color: #AA0000;">create
+                    <h1 class="text-uppercase ultrabold font-80" style="color: #AA0000;" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">create
                         Amazing
                         sh*t &
                         Get paid</h1>
@@ -161,10 +163,10 @@
                         </div>
 
                         <!-- /.footer-recent-post -->
-                        <div class="col-lg-2 col-lg-2 col-sm-6 col-12 footer-list my-2">
+                        <div class="col-lg-2 col-lg-2 col-sm-6 col-12 footer-list my-2" data-aos="fade-up">
                             <h5 class="footer__title footer--dark footer--dotdark">INITIATIVES</h5>
                             <ul class="list-unstyled footer__list">
-                                <li><a class="footer--dark" href="#">Our Blog</a></li>
+                                <li><a class="footer--dark" href="blog.html">Our Blog</a></li>
                                 <li><a class="footer--dark" href="#">Academy</a></li>
                                 <li><a class="footer--dark" href="#">Campus Manager</a></li>
                             </ul>
@@ -208,4 +210,8 @@
     </body>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>

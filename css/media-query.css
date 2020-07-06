@@ -119,5 +119,13 @@
     font-size: 40px;
   }
 
+  .logo__small {
+    width: 100px;
+  }
+
+  .about_text_falling {
+    line-height: 5rem;
+    margin-top: 10px
+  }
 
 }

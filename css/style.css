@@ -227,6 +227,10 @@ li.active_dark {
     color: #9A9A9A
 }
 
+.about_text_falling {
+    line-height: 5rem; margin-top: 150px
+}
+
 
 
 /*footer-dark*/
@@ -495,14 +499,14 @@ a.footer--dark:hover {
     text-shadow: -2px 0 #49FC00;
     clip: rect(24px, 550px, 90px, 0);
     /*    animation: glitch-anim-2 3s infinite linear alternate-reverse;*/
-    animation: glitch-anim-2 3s  linear alternate-reverse;
+    animation: glitch-anim-2 10s  linear alternate-reverse;
 }
 .glitch::after {
     left: -2px;
     text-shadow: -2px 0 #b300fc;
     clip: rect(85px, 550px, 140px, 0);
     /*    animation: glitch-anim 2.5s infinite linear alternate-reverse;*/
-    animation: glitch-anim 2.5s  linear alternate-reverse;
+    animation: glitch-anim 10s  linear alternate-reverse;
 }
 @-webkit-keyframes glitch-anim {
     0% {
