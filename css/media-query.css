@@ -128,4 +128,30 @@
     margin-top: 10px
   }
 
+  .footer--dotdark:before {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #292929;
+    display: inline-block;
+    margin-bottom: 2px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+  }
+
+  .footer--dotlight:before {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin-bottom: 2px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+  }
+
 }
