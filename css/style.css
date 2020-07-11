@@ -63,6 +63,11 @@ body {
 .light {
     font-weight: 300;
 }
+
+.medium {
+    font-weight: 500;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -481,6 +486,27 @@ a.footer--dark:hover {
     text-decoration: none;
 }
 
+.work__detail img {
+    width: 414px;
+    height: 489px;
+}
+
+.accolades ul li {
+    border-top: 1px solid #707070;
+}
+
+.dotdark:before {
+    content: "\A";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #292929;
+    display: inline-block;
+    margin-bottom: 2px;
+    position: absolute;
+    left: -20px;
+    position: absolute;
+}
 
 .glitch-wrapper {
     height: 100%;

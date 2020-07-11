@@ -1,19 +1,18 @@
-
-//if (
-//    "IntersectionObserver" in window && "IntersectionObserverEntry" in window && "IntersectionRation" in window.IntersectionObserverEntry.prototype
-//) {
-//    let observer = new IntersectionObserver (entries =>  {
-//        if (entries[0].boundingClientRect.y < 0) {
-//            //            document.body.classList.add("hi");
-//            alert('seen')
-//        }else {
-//            //            document.body.classList.add("hi");
-//            alert('not seen')
-//        }
-//    });
-//
-//    observer.observe(document.querySelector("#section_4"));
-//}
+barba.init({
+    transitions: [{
+        name: 'opacity-transition',
+        leave(data) {
+            return gsap.to(data.current.container, {
+                opacity: 0
+            });
+        },
+        enter(data) {
+            return gsap.from(data.next.container, {
+                opacity: 0
+            });
+        }
+    }]
+});
 
 $(window).scroll(function() {
 
