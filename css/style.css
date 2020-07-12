@@ -530,16 +530,11 @@ ul.transition {
 
 ul.transition li {
     transform: scaleY(0);
-    background: #000;
+    background: #708EF5;
     width: 20%;
 }
 
-.work-link {
-
-}
-
 /*add fixed*/
-
 .add_fixed {
     position: fixed;
     top: 20%;
