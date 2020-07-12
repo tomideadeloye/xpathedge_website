@@ -464,16 +464,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
             integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <!-- three js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
-            integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
-    <script src="js/utility.js"></script>
+    <!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+-->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <!-- load gsap animation library (minified version) -->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+
+    <script src="js/utility.js"></script>
     <script>
 
         // OVERLAY
         TweenMax.to(".first", 1.5, {
             delay: .5,
+            top: "-100%",
             top: "-100%",
             ease: Expo.easeInOut
         });

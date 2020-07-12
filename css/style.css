@@ -87,11 +87,15 @@ body {
     font-size: 50px;
 }
 
+.link {
+    text-decoration: none !important;
+}
+
 /*Xpathedge Website*/
 /* OVERLAY
 =========================== */
 .overlay {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0%;
@@ -507,6 +511,43 @@ a.footer--dark:hover {
     left: -20px;
     position: absolute;
 }
+
+/*transition intro*/
+
+ul.transition {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+    list-style: none;
+    padding: 0;
+}
+
+ul.transition li {
+    transform: scaleY(0);
+    background: #000;
+    width: 20%;
+}
+
+.work-link {
+
+}
+
+/*add fixed*/
+
+.add_fixed {
+    position: fixed;
+    top: 20%;
+    left: 20;
+    z-index: 10;
+}
+
+/*glitch animation*/
 
 .glitch-wrapper {
     height: 100%;
