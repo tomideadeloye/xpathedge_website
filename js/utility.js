@@ -66,18 +66,34 @@ function delay(n) {
 }
 
 if (typeof $("div").data('barba') !== 'undefined') {
-    barba.init({
-        sync: true,
-        transitions: [{
-            sync: true,
-            name: 'opacity-transition',
-            async leave(data) {
-                const done =  this.async();
+    //    barba.init({
+    //        sync: true,
+    //        transitions: [{
+    //            sync: true,
+    //            name: 'opacity-transition',
+    //            async leave(data) {
+    //                const done =  this.async();
+    //
+    //                pageTransition();
+    //                await delay(1500);
+    //                done()
+    //            },
+    //        }]
+    //    });
 
-                pageTransition();
-                await delay(1500);
-                done()
+    barba.init({
+        transitions: [{
+            name: 'opacity-transition',
+            leave(data) {
+                return gsap.to(data.current.container, {
+                    opacity: 0
+                });
             },
+            enter(data) {
+                return gsap.from(data.next.container, {
+                    opacity: 0
+                });
+            }
         }]
     });
 
