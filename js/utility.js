@@ -1,3 +1,11 @@
+
+const $logo = document.querySelector('.transition__logo');
+const $frameBlack = document.querySelector('.page-transition__black');
+const $frameRed = document.querySelector('.page-transition__red');
+const $button = document.querySelector('#button');
+
+
+
 $(window).scroll(function() {
 
     // selectors
@@ -24,7 +32,7 @@ $(window).scroll(function() {
             // Add class of currently active div
             $panel.addClass('color-' + $(this).data('color'));
         } else {
-            //            $panel.removeClass('color-' + $(this).data('color'));
+            $panel.removeClass('color-' + $(this).data('color'));
         }
     });
 
@@ -39,8 +47,6 @@ $(document).scroll(function () {
     } else {
         $('.social_share').removeClass('add_fixed');
     }
-
-    console.log(y)
 })
 
 
@@ -56,6 +62,14 @@ function pageTransition() {
 }
 
 
+let tltransition = new TimelineMax({paused:true})
+.fromTo($frameRed , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
+.fromTo($frameBlack , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},.2)
+.fromTo($logo , 1.6, {xPercent: -100, autoAlpha:0 },{xPercent: 0, autoAlpha:1, ease: Power4.easeInOut},.7)
+.set($frameRed, {scaleX:0})
+.to($frameBlack , 2.2, {scaleX: 0, transformOrigin:'right', ease: Power4.easeInOut})
+.to($logo , .2, {autoAlpha:0 },'-=1.2')
+
 function delay(n) {
     n = n || 2000;
     return new Promise(done => {
@@ -66,34 +80,18 @@ function delay(n) {
 }
 
 if (typeof $("div").data('barba') !== 'undefined') {
-    //    barba.init({
-    //        sync: true,
-    //        transitions: [{
-    //            sync: true,
-    //            name: 'opacity-transition',
-    //            async leave(data) {
-    //                const done =  this.async();
-    //
-    //                pageTransition();
-    //                await delay(1500);
-    //                done()
-    //            },
-    //        }]
-    //    });
-
     barba.init({
+        sync: true,
         transitions: [{
+            sync: true,
             name: 'opacity-transition',
-            leave(data) {
-                return gsap.to(data.current.container, {
-                    opacity: 0
-                });
+            async leave(data) {
+                const done =  this.async();
+                //                updateTransition();
+                tltransition.play(0);
+                await delay(1500);
+                done()
             },
-            enter(data) {
-                return gsap.from(data.next.container, {
-                    opacity: 0
-                });
-            }
         }]
     });
 
