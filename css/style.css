@@ -264,6 +264,7 @@ li.active_dark {
 .swiper-container {
     width: 100%;
     height: 100%;
+    cursor: url('../img/drag_icon.png'), auto;
 }
 
 .swiper-slide {

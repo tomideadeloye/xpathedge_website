@@ -5,7 +5,7 @@ const $frameRed = document.querySelector('.page-transition__red');
 const $button = document.querySelector('#button');
 
 //        Initialize Swiper
-if($('.swiper-container')){
+if($('.swiper-container').length){
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,
         pagination: {
@@ -32,6 +32,9 @@ if($('.swiper-container')){
     });
 
 }
+
+
+
 
 $(window).scroll(function() {
 
@@ -127,8 +130,32 @@ if (typeof $("div").data('barba') !== 'undefined') {
 
     barba.hooks.after(() => {
         AOS.init();
-        if($('.swiper-container')){
-            swiper.init();
+        if($('.swiper-container').length){
+            //            swiper.init();
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 4,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar',
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    // when window width is >= 480px
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 10
+                    }
+                }
+            });
         }
     });
 }

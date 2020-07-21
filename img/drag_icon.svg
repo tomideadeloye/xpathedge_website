@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="94" viewBox="0 0 124 94">
+  <g id="drag_icon" data-name="drag icon" transform="translate(-1178 -2296)">
+    <circle id="Ellipse_27" data-name="Ellipse 27" cx="47" cy="47" r="47" transform="translate(1193 2296)" fill="#ffe6e6"/>
+    <text id="Drag" transform="translate(1214 2353)" fill="#1c1c1c" font-size="24" font-family="NeueMachina-Regular, Neue Machina"><tspan x="0" y="0">Drag</tspan></text>
+    <path id="Polygon_1" data-name="Polygon 1" d="M6,0l6,10H0Z" transform="translate(1178 2352) rotate(-90)" fill="#ffe6e6"/>
+    <path id="Polygon_2" data-name="Polygon 2" d="M6,0l6,10H0Z" transform="translate(1302 2340) rotate(90)" fill="#ffe6e6"/>
+  </g>
+</svg>
