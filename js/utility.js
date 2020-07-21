@@ -61,6 +61,9 @@ function pageTransition() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 
+function goUp() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+}
 
 let tltransition = new TimelineMax({paused:true})
 .fromTo($frameRed , 2.2, {scaleX: 0},{scaleX: 1, transformOrigin:'left', ease: Power4.easeInOut},)
@@ -87,8 +90,8 @@ if (typeof $("div").data('barba') !== 'undefined') {
             name: 'opacity-transition',
             async leave(data) {
                 const done =  this.async();
-                //                updateTransition();
                 tltransition.play(0);
+                goUp();
                 await delay(1500);
                 done()
             },
