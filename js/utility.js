@@ -4,7 +4,34 @@ const $frameBlack = document.querySelector('.page-transition__black');
 const $frameRed = document.querySelector('.page-transition__red');
 const $button = document.querySelector('#button');
 
+//        Initialize Swiper
+if($('.swiper-container')){
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            }
+        }
+    });
 
+}
 
 $(window).scroll(function() {
 
@@ -100,6 +127,9 @@ if (typeof $("div").data('barba') !== 'undefined') {
 
     barba.hooks.after(() => {
         AOS.init();
+        if($('.swiper-container')){
+            swiper.init();
+        }
     });
 }
 
